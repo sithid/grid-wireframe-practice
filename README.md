@@ -1,4 +1,6 @@
-### 🔭 Build the Wireframe with Grid: Part 1
+### Module 2, Week 2 grid practice.
+
+## 🔭 Build the Wireframe with Grid: Part 1
 
 Instructions:
 - Create your project and its GitHub repository with the name of grid-wireframe-practice
@@ -12,3 +14,5 @@ Instructions:
 - Save the following image as mobile-wireframe.png and place it in the root level of your project.
 - Recreate and style the layout from the wireframe below as best as you can.
 - Submit the link to your repository once all work is completed and pushed to GitHub
+
+The iPhone 14 Pro Max devtools emulator was used to help me test.
