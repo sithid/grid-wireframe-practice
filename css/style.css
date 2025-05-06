@@ -7,8 +7,6 @@
 
 body {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
     grid-template-areas:
             "header"
             "aside-top"
@@ -19,7 +17,6 @@ body {
     padding: 10px;
     margin: 20px;
     min-height: 100vh;
-    max-width: 400px;
     background-color: #f0f0f0;
 }
 
@@ -31,6 +28,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    width: 100%;
 }
 
 aside {
@@ -47,6 +45,10 @@ aside:first-of-type {
 
 aside:last-of-type {
     grid-area: aside-bottom;
+}
+
+main h1 {
+    text-align: center;
 }
 
 main {
@@ -73,4 +75,21 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (min-width: 768px ) {
+    body {
+        grid-template-areas:
+            "header header header"
+            "aside-top main aside-bottom"
+            "footer footer footer";
+    }
+
+    aside:first-of-type {
+        grid-area: aside-top;
+    }
+    
+    aside:last-of-type {
+        grid-area: aside-bottom;
+    }
 }
